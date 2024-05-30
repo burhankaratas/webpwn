@@ -1,3 +1,5 @@
+import os
+
 def display_banner():
     print("\033[32m")
     print("""     
@@ -15,3 +17,6 @@ def display_banner():
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠀⠀⠀⠀⠀⠀⠀⠀⠀
     """)
     print("\033[0m")
+
+def clear():
+    os.system('cls' if os.name == 'nt' else 'clear')
