@@ -1,6 +1,6 @@
 from scans import brute_force, port_scanning, url_parsing
 from reporting import report_generator
-from utils.functions import display_banner
+from utils.functions import display_banner, clear
 
 from colorama import Fore, Back, Style
 import time
@@ -30,13 +30,16 @@ def main():
             pass
 
         elif islem == "3":
-            pass
+            brute_force.run_brute_force()
 
         elif islem == "4":
             pass
 
         elif islem == "5":
             url_parsing.url_parsing()
+
+        elif islem == "clear":
+            clear()
 
         else:
             print(Fore.RED, "Lütfen geçerli bir değer girip tekrar deneyin.", Style.RESET_ALL)
