@@ -5,9 +5,7 @@ Webpwn, siber güvenlik alanında kullanılabilecek çok amaçlı bir araçtır.
 
 ## Özellikler
 
-- Web uygulamaları üzerinde zafiyet taraması
 - TCP port taraması
-- Ağ Trafik Analizi
 - Url Çözümleme
 - Brute Force
 

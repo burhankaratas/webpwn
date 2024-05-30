@@ -1,5 +1,4 @@
 from scans import brute_force, port_scanning, url_parsing
-from reporting import report_generator
 from utils.functions import display_banner, clear
 
 from colorama import Fore, Back, Style
@@ -14,10 +13,8 @@ def main():
         print(Fore.YELLOW, """
 
         1 - Port Tarama (TCP)
-        2 - Zafiyet Taraması (Vulnerability Scanning)
-        3 - Brute Force
-        4 - Ağ Trafik Analizi
-        5 - URL çözümleme
+        2 - Brute Force
+        3 - URL çözümleme
 
         """, Style.RESET_ALL)
         
@@ -25,17 +22,11 @@ def main():
 
         if islem == "1":
             port_scanning.port_scanning()
-        
-        elif islem == "2":
-            pass
 
-        elif islem == "3":
+        elif islem == "2":
             brute_force.run_brute_force()
 
-        elif islem == "4":
-            pass
-
-        elif islem == "5":
+        elif islem == "3":
             url_parsing.url_parsing()
 
         elif islem == "clear":
