@@ -1,0 +1,15 @@
+# Ortam / sırlar
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+env/
+*.egg-info/
+
+# OS / editör
+.DS_Store
+.idea/
+.vscode/
